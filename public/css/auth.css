@@ -1,0 +1,112 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== CONTAINER CARD ===== */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    padding: 45px 35px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    border: none;
+}
+
+h2 {
+    color: #1e293b;
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* ===== FORM INPUT ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 15px 16px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    color: #334155;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+/* ===== BUTTON ===== */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1940ac;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+/* ===== FOOTER LINK ===== */
+p {
+    color: #64748b;
+    margin-top: 30px;
+    font-size: 14.5px;
+}
+
+p a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+p a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
